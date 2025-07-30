@@ -1,0 +1,44 @@
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 150px 30px 150px;
+}
+
+.nav-item {
+    padding: 20px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    transition: transform 0.1s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+
+}
+
+.footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.footer-element {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+
+}

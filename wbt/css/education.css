@@ -1,0 +1,68 @@
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 150px 30px 150px;
+}
+
+.nav-item {
+    padding: 20px;
+}
+
+.x {
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.uni {
+
+    align-items: center;
+    text-align: justify;
+    height: 200px;
+    width: 600px;
+}
+
+
+.aiub-img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.aiub-img:hover {
+    transform: scale(1.1);
+
+}
+
+main {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.footer-element {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+h2 {
+    text-align: center;
+    /* border: 2px solid;*/
+}
