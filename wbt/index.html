@@ -5,61 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdullah's Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 
-<body><br>
+<body class="work-sans"><br>
     <header>
-        <nav class="nav-bar">
-            <a class="nav-item" href="index.html">Home</a>
-            <a class="nav-item" href="./html/education.html">Education</a>
-            <a class="nav-item" href="./html/experience.html">Experience</a>
-            <a class="nav-item" href="./html/projects.html">Projects</a>
-            <a class="nav-item" href="./html/contact me.html">Contact Me</a>
+
+        <nav class="navi">
+            <h3 class="nav-title"><a href="index.html">A<span class="red">A</span></a> </h3>
+            <ul class="nav-item">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/education.html">Education</a></li>
+                <li><a href="html/experience.html">Experience</a></li>
+                <li><a href="html/projects.html">Project</a></li>
+                <li><a href="html/contact me.html">Contact</a></li>
+            </ul>
         </nav>
-    </header><br>
-    <br>
-    <br>
-    <main class="v">
 
-        <br>
-        <header>
-            <section class="x">
-                <img src="image/MyImage.jpeg" alt="Abdullah Al Tasnim" height="150" width="150" class="hover-img">
-                <h1>Welcome to my portfolio,</h1>
-                <br>
-                <h2>Abdullah Al Tasnim Mahim</h2>
-        </header>
 
-        <p><strong>Contact:</strong> 01749 035705
-            <br> <strong>Email:</strong> abdullahaltasnim13@gmail.com
-            <br> <strong>Address:</strong> (H/F/# KA-123) Kuratoli Bazar, Kuril, Dhaka, Bangladesh
-            <br>
-        </p>
+    </header>
+
+
+    <main>
+
+
+        <section class="landing-page-margin">
+            <div class="landing-page">
+                <div class="landing-page-button-gap">
+                    <h4 class="landing-greating">Hi There!</h4>
+                    <h2 class="landing-software">I am a<span class="red"> Software Engineer </span></h2>
+                    <h4 class="landing-messages">I make the complex simple.</h4> <br> <br> <br>
+                    <a href="html/contact me.html"> <button class="btn landing-page-button "> Contact Me</button></a>
+                </div>
+
+                <div> <img src="image/MyImage.jpeg" alt="abdullah" width="300" height="300"></div>
+
+            </div>
+
         </section>
-        <div class="about-me"><br><br>
-            <h2><strong> About Me</strong> </h2>
 
-            <p>
-                Currently pursuing a B.Sc. in Computer Science and Engineering at American International
-                University-Bangladesh (AIUB), with a strong passion for Graphic Design, Robotics, Internet of Things
-                (IoT) and Software Engineering. Actively engaged in various co-curricular and technical activities,
-                demonstrating a blend of creativity and technical proficiency. Adept at collaborating in team-based
-                environments, organizing events, and contributing to both academic and practical projects. Committed to
-                continuous learning and innovation in the field of technology.
-            </p>
-        </div><br><br>
     </main>
 
-    <footer>
-        <div class="footer-item">
-            <p>© copyright 2025 all rights reserved.</p>
-            <p>Follow me:</p>
+
+
+    <div class="landing-page-footer">
+
+        <span class="email">
+            <p><strong>Email</strong></p>
+            <p>abdullahaltasneem13@gmail.com</p>
+        </span>
+        <span class="phone">
+            <p> <strong>Phone</strong></p>
+            <p>01749-035705</p>
+        </span>
+        <span class="location">
+            <p> <strong>Location </strong></p>
+            <p>Dhaka, Bangladesh</p>
+        </span>
+    </div>
+
+
+
+    <footer class="landing-page-footer-end">
+        <!-- <div>
+            <a href="">github</a>
+            <a href="">LinkedIn</a>
+            <a href="">github</a>
+
+        </div> -->
+
+        <div>
+            <p> Copyright 2025. All Rights Reserved.</p>
         </div>
-        <a class="footer-element" href="https://www.linkedin.com/feed/">LinkedIn</a> <br>
-        <a class="footer-element" href="https://github.com/abdullahaltasnim">Github</a>
-        </p>
+
     </footer>
+
 </body>
 
 </html>

@@ -5,95 +5,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdullah's Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/projects.css">
 </head>
 
-<body>
-    <header> <br>
-        <nav class="nav-bar">
-            <a class="nav-item" href="../index.html">Home</a>
-            <a class="nav-item" href="./education.html">Education</a>
-            <a class="nav-item" href="./experience.html">Experience</a>
-            <a class="nav-item" href="./projects.html">Projects</a>
-            <a class="nav-item" href="./contact me.html">Contact Me</a>
+<body class="work-sans"><br>
+    <header>
+
+        <nav class="navi">
+            <h3 class="nav-title"><a href="../index.html">A<span class="red">A</span></a> </h3>
+            <ul class="nav-item">
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li class="contact-right"><a href="contact me.html">Contact</a></li>
+            </ul>
         </nav>
-    </header><br>
+
+
+    </header>
 
     <main>
-        <h1>PROJECTS</h1>
-        <ol>
+        <h4 class="project-title">PROJECTS & RESEARCH</h4>
 
-            <div class="x"><img src="../image/cafe.jpeg" alt="java Project" width="200px" height="200px" class="image">
-                <li> <b>JAVA PROJECT</b><br><br></li>
-                <strong> Cafe Management System</strong><br>
-                Framework: Java (Swing GUI)<br>
-                Developed a café management system application with a user-friendly GUI using Java Swing. Features
-                include
-                online ordering, digital payment integration, and internal database connectivity for managing menu
-                items,
-                orders, and transactions efficiently.
-            </div>
-            <br><br><br>
+        <div class="project-side">
 
-            <div class="x"><img src="../image/database.png" alt="database" width="200px" height="200px" class="image">
-                <li> <b>DATABASE PROJECT</b><br><br> </li>
-                <strong>Cinema Hall Management System Database</strong><br>
-                Database: Oracle<br>
-                Built a cinema hall management database system using Oracle. Designed ER diagrams and implemented DDL
-                and
-                DML
-                queries to manage seat bookings, movie schedules, and payment records. Integrated the Oracle database
-                with
-                an
-                existing Java application via ODBC/JDBC connections to ensure smooth data access and operations.
+            <div class="x">
+                <img src="../image/cafe.jpeg" alt="java Project" width="550px" height="350px">
             </div>
-            <br> <br><br>
-            <div class="x"><img src="../image/graphics1.png" alt="database" width="200px" height="200px" class="image">
-                <li> <b>GRAPHICS PROJECT</strong><br><br> </li>
-                <strong> A Pixelated View: Cox’s Bazar</strong><br>
-                Framework: Code::Blocks (OpenGL GLUT), C++<br>
-                Designed and developed a 3D graphical project in C++ using OpenGL and GLUT within Code::Blocks,
-                showcasing a
-                pixelated model of Cox’s Bazar to demonstrate computer graphics fundamentals and rendering techniques.
+
+            <div class="project-text">
+                <h5 class="project-name">JAVA PROJECT </h5>
+                <p class="project-title-in">Cafe Management System</p>
+                <p>Framework: Java (Swing GUI)</p>
+                <p>Developed a café management system application with a user-friendly GUI using Java Swing. Features
+                    include
+                    online ordering, digital payment integration, and internal database connectivity for managing menu
+                    items,
+                    orders, and transactions efficiently.</p>
             </div>
-            <br><br><br>
-            <div class="x"><img src="../image/agriculture.png" alt="database" width="200px" height="200px"
-                    class="image">
-                <li> <strong>C# PROJECT</strong><br><br> </li>
-                <strong>Agriculture Equipment Shop Management System</strong><br>
-                Framework: C# (.NET)<br>
-                Developed a C#-based management system for an agriculture equipment shop, integrated with a database for
-                product
-                and transaction management. Implemented digital payment functionality and a two-step verification
-                gateway
-                for
-                secure user authentication and checkout.
+
+        </div>
+
+
+        <div class="project-side">
+
+            <div class="x">
+                <img src="../image/database.png" alt="database" width="550px" height="350px">
             </div>
-            <br><br><br>
-            <div class="x"><img src="../image/medical.png" alt="database" width="200px" height="200px" class="image">
-                <li> <b>SOFTWARE PROJECT</b><br><br> </li>
-                <strong>Personalized Healthcare Assistant</strong><br>
-                Tool: Figma for prototype<br>
-                Process Model: Agile (Scrum)<br>
-                Designed a responsive healthcare assistant application prototype using Figma. The system was designed
-                using
-                Agile (Scrum) methodology to ensure continuous improvement and user-focused features. The system tracks
-                patient
-                health records, manages medications, and provides appointment reminders, ensuring effective personalized
-                healthcare management.
-                <br><br><br>
+
+            <div class="project-text">
+                <h5 class="project-name">DATABASE PROJECT</h5>
+                <p class="project-title-in">Cinema Hall Management System Database</p>
+                <p class="project-description-in">Database: Oracle
+                    Built a cinema hall management database system using Oracle. Designed ER diagrams and implemented
+                    DDL
+                    and
+                    DML
+                    queries to manage seat bookings, movie schedules, and payment records. Integrated the Oracle
+                    database
+                    with
+                    an
+                    existing Java application via ODBC/JDBC connections to ensure smooth data access and operations.</p>
+
             </div>
+
+        </div>
+
+
+        <div class="project-side">
+
+            <div class="x">
+
+                <img src="../image/graphics1.png" alt="database" width="550px" height="350px">
+            </div>
+
+            <div class="project-text">
+                <h5 class="project-name">GRAPHICS PROJECT</h5>
+                <p class="project-title-in"> A Pixelated View: Cox’s Bazar</p>
+                <p class="project-description-in">Framework: Code::Blocks (OpenGL GLUT), C++</p>
+                <p> Designed and developed a 3D graphical project in C++ using OpenGL and GLUT within Code::Blocks,
+                    showcasing a
+                    pixelated model of Cox’s Bazar to demonstrate computer graphics fundamentals and rendering
+                    techniques.
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <div class="project-side">
+
+            <div class="x">
+                <img src="../image/agriculture.png" alt="database" width="550px" height="350px">
+            </div>
+
+            <div class="project-text">
+                <h5 class="project-name">C# PROJECT</h5>
+                <p class="project-title-in">Agriculture Equipment Shop Management System</p>
+                <p>Framework: C# (.NET)</p>
+                <p class="project-description-in"> Developed a C#-based management system for an agriculture equipment
+                    shop, integrated with a database
+                    for
+                    product
+                    and transaction management. Implemented digital payment functionality and a two-step verification
+                    gateway
+                    for
+                    secure user authentication and checkout.
+                </p>
+            </div>
+
+        </div>
+
+
+
+        <div class="project-side">
+
+            <div class="x">
+                <img src="../image/medical.png" alt="database" width="550px" height="350px">
+            </div>
+
+            <div class="project-text">
+                <h5 class="project-name">SOFTWARE PROJECT</h5>
+                <p class="project-title-in">Personalized Healthcare Assistant</p>
+                <p>Tool: Figma for prototype <br> Process Model: Agile (Scrum)</p>
+                <p class="project-description-in"> Designed a responsive healthcare assistant application prototype
+                    using Figma. The system was
+                    designed
+                    using
+                    Agile (Scrum) methodology to ensure continuous improvement and user-focused features. The system
+                    tracks
+                    patient
+                    health records, manages medications, and provides appointment reminders, ensuring effective
+                    personalized
+                    healthcare management.
+                </p>
+            </div>
+
+        </div>
+
     </main>
     <br>
-    <footer>
-        <div class="footer-item">
-            <p>© copyright 2025 abdullah. All rights reserved.</p>
-            <p>Follow me:</p>
+
+    <footer class="about-footer-end">
+        <!-- <div>
+            <a href="">github</a>
+            <a href="">LinkedIn</a>
+            <a href="">github</a>
+
+        </div> -->
+
+        <div>
+            <p> Copyright 2025. All Rights Reserved.</p>
         </div>
-        <a class="footer-element" href="https://www.linkedin.com/feed/">LinkedIn</a> <br>
-        <a class="footer-element" href="https://github.com/abdullahaltasnim">Github</a>
-        </p>
+
     </footer>
+
 
 </body>
 

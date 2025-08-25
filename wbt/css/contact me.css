@@ -1,60 +1,178 @@
-.nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 150px 30px 150px;
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* reserved */
+
+* {
+    margin: 0px;
+}
+
+.red {
+    color: red;
+}
+
+.btn {
+
+    background-color: #2ecc71;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+
+
+/*nav styles*/
+
+
+
+
+.nav-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+    margin-left: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
 }
 
 .nav-item {
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-
-}
-
-.b {
-    margin-bottom: 10px;
-}
-
-main {
-    margin-left: 550px;
-    margin-right: 700px;
-}
-
-main {
-    background-color: #fff;
-    padding: 40px;
-    width: 250px;
-}
-
-form.b {
     display: flex;
-    flex-direction: column;
+    justify-content:
+
+
 }
 
-div.n label,
-div.n input {
-    margin-bottom: 10px;
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+}
+
+/* Contact Page Style */
+
+
+.contact-me {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 100px;
+}
+
+.contact {
+    margin: 220px 190px;
+    text-align: center;
+}
+
+
+.contact-info {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+
+.social {
+    display: flex;
+    padding: 20px
+}
+
+.letstalk {
+    height: 700px;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lab(95.63% -6.78 6.32 / 0.959);
+}
+
+.contact-talk {
+    font-size: 30px;
+    text-align: center;
+}
+
+.common-margin {
+    margin-top: 20px;
+}
+
+.num {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
     width: 100%;
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-}
 
 
-.footer-item {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.landing-page-footer-end {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    /* align-items: center; */
-}
-
-.footer-element {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    margin-top: -50px;
 }

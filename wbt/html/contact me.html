@@ -5,61 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abdullah's Portfolio</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/contact me.css">
 
 
 </head>
 
-<body>
-    <header> <br>
-        <nav class="nav-bar">
-            <a class="nav-item" href="../index.html">Home</a>
-            <a class="nav-item" href="./education.html">Education</a>
-            <a class="nav-item" href="./experience.html">Experience</a>
-            <a class="nav-item" href="./projects.html">Projects</a>
-            <a class="nav-item" href="./contact me.html">Contact Me</a>
+<body class="work-sans"><br>
+    <header>
+
+        <nav class="navi">
+            <h3 class="nav-title"><a href="../index.html">A<span class="red">A</span></a> </h3>
+            <ul class="nav-item">
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="projects.html">Project</a></li>
+                <li><a href="contact me.html">Contact</a></li>
+            </ul>
         </nav>
-    </header><br>
 
 
+    </header>
 
     <main>
-        <h1>Contact Me</h1>
-        <form class="b" method="Get">
-            <div class="n">
-                <label for="fname">Name:</label><br>
-                <input type="text" id="num" name="fname" required><br>
 
-                <label for="num"> Number:</label><br>
-                <input type="text" id="num" name="num" required><br>
+        <div class="contact-me">
+            <div class="contact">
+                <h4 class="contact-info">Contact info</h4>
+                <p>Office Address: 195/B, Basundhara, Dhaka</p>
+                <p>Email: abdullahaltasneem13@gmail.com</p>
 
-                <label for="num"> Email:</label><br>
-                <input type="email" id="num" name="num" required><br>
-
-                <label for="num"> Meeting Schedule:</label><br>
-                <input type="date" id="num" name="num" required><br>
-
-                <br>
-                <input type="reset">
-                <input type="submit" value="Submit">
+                <ul class="social">
+                    <li> <a href="https://www.facebook.com/abdullah.al.tasnim.1330"> <img src="../image/facebook.png"
+                                alt="" width="20px" height="20px"> </a> </li>
+                    <li> <a href="https://www.linkedin.com/feed/"> </a><img src="../image/linkedin.png" alt=""
+                            width="20px" height="20px"> </a> </li>
+                    <li> <a href="https://github.com/abdullahaltasnim"> <img src="../image/github.png" alt=""
+                                width="20px" height="20px"> </a> </li>
+                    <li> <a href=""> <img src="../image/x.png" alt="" width="20px" height="20px"> </a> </li>
+                </ul>
             </div>
-        </form>
 
+
+
+            <div class="letstalk">
+                <h4 class="contact-talk">Let's Talk</h4>
+                <form>
+                    <div>
+                        <div class="common-margin">
+                            <label for="fname"><strong>Your Name: </strong></label> <br>
+                            <input type="text" class="num" id="num" name="fname" required placeholder="xyz"
+                                maxlength="50">
+
+                        </div>
+
+                        <div class="common-margin">
+                            <label for="num"><strong>Your Email: </strong></label> <br>
+                            <input type="email" class="num" id="num" name="num" required placeholder="xyz@gmail.com">
+                        </div>
+                        <div class="common-margin">
+                            <label for="num"> <strong>Hire for:</strong></label> <br>
+
+                            <select class="num" name="" id="" required>
+                                <option value="">Select One</option>
+                                <option value="">Project</option>
+                                <option value="">Research</option>
+                                <option value="">Consult</option>
+                            </select>
+                        </div>
+
+                        <div class="common-margin">
+                            <label for="num"><strong>Meeting Schedule:</strong></label> <br>
+                            <input type="date" class="num" id="num" name="num" required>
+
+                        </div>
+                        <div class="common-margin">
+                            <label for="work"><strong>Work Field: </strong></label> <br>
+
+                            <input type="checkbox">Web Devlopment <br>
+                            <input type="checkbox">App Devlopment <br>
+                            <input type="checkbox">Software Devlopment
+                        </div>
+
+                        <div class="common-margin">
+                            <label for="meet"><strong>How would you like to meet?</strong></label> <br>
+                            <input type="radio" name="meet">Online <br>
+                            <input type="radio" name="meet">Physical <br>
+                            <input type="radio" name="meet">Via Agents
+                        </div>
+
+
+                        <div class="common-margin">
+                            <textarea class="num" name="" id="" cols="25" rows="2">Messages...</textarea>
+
+                        </div>
+
+                        <div class="common-margin">
+                            <input class="btn num" type="submit" value="Send Request">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
     <br>
-    <footer>
-        <div class="footer-item">
-            <p>© copyright 2025 abdullah. All rights reserved.</p>
-            <p>Follow me:</p>
+
+
+    <footer class="landing-page-footer-end">
+        <!-- <div>
+            <a href="">github</a>
+            <a href="">LinkedIn</a>
+            <a href="">github</a>
+
+        </div> -->
+
+        <div>
+            <p> Copyright 2025. All Rights Reserved.</p>
         </div>
-        <a class="footer-element" href="https://www.linkedin.com/feed/">LinkedIn</a> <br>
-        <a class="footer-element" href="https://github.com/abdullahaltasnim">Github</a>
-        </p>
+
     </footer>
-
-
-    <script src="/JS/user.js"></script>
-
 
 
 </body>

@@ -1,50 +1,144 @@
-.nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    margin: 50px 150px 30px 150px;
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* reserved */
+
+* {
+    margin: 0px;
+}
+
+.red {
+    color: red;
+}
+
+.btn {
+
+    background-color: #2ecc71;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+
+/*nav styles*/
+
+
+
+
+.nav-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+    margin-left: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
 }
 
 .nav-item {
-    padding: 20px;
-}
-
-.hover-img {
-    width: 300px;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.hover-img:hover {
-    transform: scale(1.1);
-}
-
-main {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-.about-me{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content:
+
+
 }
 
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-
-.footer-item {
+.navi {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+}
+
+
+
+
+/*landing page*/
+
+
+
+
+
+.landing-page-margin {
+    margin: 100px 100px;
+
 
 }
 
-.footer-element {
+.landing-page {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing-page-button {
+    margin-top: 30px;
+    font-weight: 700;
+
+}
+
+
+.landing-greating {
+    font-weight: 500;
+    font-size: 20px;
+
+}
+
+.landing-software {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+
+.landing-messages {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.landing-page-footer {
+    margin: 120px 100px;
+    display: flex;
+}
+
+
+.email {
+    border-right: 2px solid;
+    padding-right: 25px;
+}
+
+
+.phone {
+    margin-left: 20px;
+    border-right: 2px solid;
+    padding-right: 25px;
+    padding-left: 5px;
+
+}
+
+
+.location {
+    margin-left: 20px;
+    padding-left: 5px;
+}
+
+
+.landing-page-footer-end {
+    display: flex;
     justify-content: center;
+    margin-bottom: -50px;
+    font-size: 15px;
+    text-align: center;
 }

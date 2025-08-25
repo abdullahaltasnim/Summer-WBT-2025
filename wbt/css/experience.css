@@ -1,39 +1,120 @@
-.nav-bar {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 150px 30px 150px;
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* reserved */
+
+* {
+    margin: 0px;
+}
+
+.red {
+    color: red;
+}
+
+.btn {
+
+    background-color: #2ecc71;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+
+
+
+/* nav styles */
+
+.nav-title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+li {
+    list-style: none;
+    margin-left: 50px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
 }
 
 .nav-item {
-    padding: 20px;
-}
-
-.m{
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-}
-
-.footer-item {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-     align-items: center;
 }
 
-.footer-element {
+
+.navi {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; 
-    justify-content: center;
-} 
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 100px;
+}
 
 
-h2 {
+/*Experience & Skill*/
+
+.m {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.exp-title {
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.exp-title-middle {
     text-align: center;
-    /* border: 2px solid;*/
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    padding-top: 30px;
+
+}
+
+.exp-description-middle {
+    margin: 20px 130px 50px 130px;
+    text-align: justify;
+}
+
+.exp-list {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+
+.exp-title-in {
+    padding-bottom: 10px;
+}
+
+
+.exp-description {
+    text-align: justify;
+}
+
+
+.exp-box {
+    margin: 0px;
+    padding: 8px;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+.about-footer-end {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
 }
