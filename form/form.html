@@ -11,117 +11,22 @@
 
 <body>
 
-
-
-    <?php
-$fnameErr = $lnameErr = $addressErr = $codeErr = $phoneErr = $emailErr =$donnationErr "";
-$fname = $email = $address = $code = $phone = $email = $donnation"";
-
-if($-SERVER["REQUEST_METHOD"] == "POST") {
-    if(empty($_POST["fname"])){
-        $fnameErr = "Name is required";
-
-    }
-    else {
-        $fname=test-input ($_POST["fname"]);
-        if(!preg_match("/^[a-zA-Z-' ]*$/",$fname)){
-            $fnameErr = "Only letters and white space allowed";
-        }
-    }
-
- if(empty($_POST["lname"])){
-        $lnameErr = "Name is required";
-
-    }
-    else {
-        $lname=test-input ($_POST["lname"]);
-        if(!preg_match("/^[a-zA-Z-' ]*$/",$lname)){
-            $lnameErr = "Only letters and white space allowed";
-        }
-    }
-
-
- if(empty($_POST["address"])){
-        $addressErr = "Name is required";
-
-    }
-    else {
-        $address=test-input ($_POST["address"]);
-        if(!preg_match("/^[a-zA-Z-' ]*$/",$address)){
-            $addressErr = "Only letters and white space allowed";
-        }
-    }
-
- if(empty($_POST["code"])){
-        $codeErr = "Number is required";
-
-    }
-    else {
-        $code=test-input ($_POST["code"]);
-        if(!preg_match("/^[a-zA-Z-' ]*$/",$code)){
-            $codeErr = "Only numbers is allowed";
-        }
-    }
-
- if(empty($_POST["phone"])){
-        $phoneErr = "Number is required";
-
-    }
-    else {
-        $phone=test-input ($_POST["phone"]);
-        if(!preg_match("/^[a-zA-Z-' ]*$/",$phone)){
-            $phoneErr = "Only numbers is allowed";
-        }
-    }
-
-if(empty ($_POST["email"])){
-    $emailErr = "Email is required";
-}else{
-    $email = test_input($_POST["email"]);
-    if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-        $emailErr = "Invalid email formate";
-    }
-}
-
-if(empty($_POST["donnation"])){
-    $donnationErr = "Donnation is required";
-}else{
-    $donnation = test_input($_POST["donnation"]);
-}
-
-}
-
-function test_input($data){
-    $data = trim($data);
-    $data =  stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-?>
-
-
-
-
     <p><span class="required">*</span> - Denotes Required Information</p>
     <p><strong> > 1 Donation</strong> > 2 Confirmation >Thank You</p>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER[" PHP_SELF"]);?>">
+    <form method="get">
         <h2> DONOR Information </h2>
 
         <div class="form-group">
             <label for="First Name"><strong> First Name</strong><span class="required">*</span></label>
-            <input type=" text" name="fname" value=" <?php echo $fname;?>" id="First Name">
-            <span class="error">*
-                <?php echo $fnameErr;?>
-            </span>
+            <input type=" text" name="fname" id="First Name">
+
         </div>
 
         <div class="form-group">
             <label for="Last Name"> <strong>Last Name</strong><span class="required">*</span> </label>
-            <input type="text" name="lname" value=" <?php echo $lname;?>" id="Lirst Name">
-            <span class="error">*
-                <?php echo $lnameErr;?>
-            </span>
+            <input type="text" name="lname" id="Last Name">
+
         </div>
 
         <div class="form-group">
@@ -131,10 +36,8 @@ function test_input($data){
         </div>
         <div class="form-group">
             <label for="Address 1"><strong>Adress 1</strong><span class="required">*</span></label>
-            <input type="text" name="address" value=" <?php echo $address;?>" id="Address 1:">
-            <span class="error">*
-                <?php echo $addressErr;?>
-            </span>
+            <input type="text" name="address" id="Address 1:">
+
         </div>
         <div class="form-group">
             <label for="Address 2"> <strong>Address 2</strong></label>
@@ -163,10 +66,8 @@ function test_input($data){
 
         <div class="form-group">
             <label for="Zip Code"><strong> Code</strong><span class="required">*</span></label>
-            <input type="number" name="code" value=" <?php echo $code;?>" id="Zip Code">
-            <span class="error">*
-                <?php echo $codeErr;?>
-            </span>
+            <input type="number" name="code" id="Zip Code">
+
         </div>
 
 
@@ -188,10 +89,8 @@ function test_input($data){
 
         <div class="form-group">
             <label for="Phone"><strong>Phone</strong></label>
-            <input type="number" name="phone" value=" <?php echo $phone;?>" id="Phone">
-            <span class="error">*
-                <?php echo $phoneErr;?>
-            </span>
+            <input type="number" name="phone" id="Phone">
+
         </div>
 
 
@@ -204,10 +103,8 @@ function test_input($data){
 
         <div class="form-group">
             <label for="Email"><strong>Email</strong><span class="required">*</span></label>
-            <input type="email" name="email" value=" <?php echo $email;?>" id="Email">
-            <span class="error">*
-                <?php echo $emailErr;?>
-            </span>
+            <input type="email" name="email" id="Email">
+
         </div>
 
 
@@ -215,22 +112,22 @@ function test_input($data){
         <div class="donation">
             <label><strong>Donation Amount</strong><span class="required">*</span></label>
 
-            <input type="radio" name="donation" <?php if (isset($donnation) && $donnation=="none" ) echo "checked" ;?>
+            <input type="radio" name="donation">
             <label for="none">None</label>
 
-            <input type="radio" name="donation" <?php if (isset($donnation) && $donnation=="50" ) echo "checked" ;?>
+            <input type="radio" name="donation">
             <label for="$50">$50</label>
 
-            <input type="radio" name="donation" <?php if (isset($donnation) && $donnation=="75" ) echo "checked" ;?>
+            <input type="radio" name="donation">
             <label for="$75">$75</label>
 
-            <input type="radio" name="donation" <?php if (isset($donnation) && $donnation=="100" ) echo "checked" ;?>
+            <input type="radio" name="donation">
             <label for="$100">$100</label>
 
-            <input type="radio" name="donation" <?php if (isset($donnation) && $donnation=="250" ) echo "checked" ;?>
+            <input type="radio" name="donation">
             <label for="$250">$250</label>
 
-            <input type="radio" name="donation" <?php if (isset($donnation) && $donnation=="other" ) echo "checked" ;?>
+            <input type="radio" name="donation">
             <label for="other">other</label>
         </div>
         <div class="a">
