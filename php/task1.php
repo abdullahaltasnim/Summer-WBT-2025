@@ -1,99 +1,120 @@
+////////////////////////////////////////////////////// 01 /////////////////////////////////////////////////////////////////
+
 <?php
+$length = 10;
+$width = 5;
 
+$area = $length * $width;
+$perimeter = 2 * ($length + $width);
 
-////////////////////////////////////////////////////// 08  /////////////////////////////////////////////////////////////////
+echo "Area of Rectangle = $area <br>";
+echo "Perimeter of Rectangle = $perimeter";
+?>
 
-echo "<h3>1. Simple Interest</h3>";
-$principal = 1000;
-$rate = 5;
-$time = 2;
-$si = ($principal * $rate * $time) / 100;
-echo "Principal: $principal, Rate: $rate%, Time: $time years<br>";
-echo "Simple Interest = $si <br><br>";
+////////////////////////////////////////////////////// 02 /////////////////////////////////////////////////////////////////
 
+<?php
+$amount = 1000;
+$vat = $amount * 0.15;
+$total = $amount + $vat;
 
+echo "Amount = $amount <br>";
+echo "VAT (15%) = $vat <br>";
+echo "Total with VAT = $total";
+?>
 
-////////////////////////////////////////////////////// 09  /////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////// 03 /////////////////////////////////////////////////////////////////
 
-echo "<h3>2. Swap Two Numbers</h3>";
-$a = 10;
-$b = 20;
-echo "Before Swap: a = $a, b = $b<br>";
-$a = $a + $b;
-$b = $a - $b;
-$a = $a - $b;
-echo "After Swap: a = $a, b = $b<br><br>";
+<?php
+$number = 15;
 
-
-
-////////////////////////////////////////////////////// 10 /////////////////////////////////////////////////////////////////
-
-echo "<h3>3. Leap Year Check</h3>";
-$year = 2024;
-if (($year % 4 == 0 && $year % 100 != 0) || ($year % 400 == 0)) {
-    echo "$year is a Leap Year<br><br>";
+if ($number % 2 == 0) {
+    echo "$number is Even";
 } else {
-    echo "$year is NOT a Leap Year<br><br>";
+    echo "$number is Odd";
 }
+?>
 
 
-// 11
+////////////////////////////////////////////////////// 04 /////////////////////////////////////////////////////////////////
 
-echo "<h3>4. Factorial</h3>";
-$num = 5;
-$fact = 1;
-for ($i = 1; $i <= $num; $i++) {
-    $fact *= $i;
+
+<?php
+$a = 20;
+$b = 35;
+$c = 15;
+
+if ($a >= $b && $a >= $c) {
+    echo "Largest number is $a";
+} elseif ($b >= $a && $b >= $c) {
+    echo "Largest number is $b";
+} else {
+    echo "Largest number is $c";
 }
-echo "Factorial of $num = $fact<br><br>";
+?>
 
+////////////////////////////////////////////////////// 05 /////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////// 12  /////////////////////////////////////////////////////////////////
-
-echo "<h3>5. Prime Numbers (1 to 50)</h3>";
-for ($i = 2; $i <= 50; $i++) {
-    $isPrime = true;
-    for ($j = 2; $j <= sqrt($i); $j++) {
-        if ($i % $j == 0) {
-            $isPrime = false;
-            break;
-        }
-    }
-    if ($isPrime) {
+<?php
+for ($i = 10; $i <= 100; $i++) {
+    if ($i % 2 != 0) {
         echo $i . " ";
     }
 }
-echo "<br><br>";
+?>
 
+////////////////////////////////////////////////////// 06 /////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////// 13  /////////////////////////////////////////////////////////////////
+<?php
+$numbers = array(10, 20, 30, 40, 50);
+$search = 30;
+$found = false;
 
-echo "<h3>6. Patterns</h3>";
+foreach ($numbers as $num) {
+    if ($num == $search) {
+        $found = true;
+        break;
+    }
+}
 
-echo "<b>Pattern 1</b><br>";
-for ($i = 5; $i >= 1; $i--) {
+if ($found) {
+    echo "$search found in array.";
+} else {
+    echo "$search not found in array.";
+}
+?>
+
+////////////////////////////////////////////////////// 07 /////////////////////////////////////////////////////////////////
+
+<?php
+
+for ($i = 1; $i <= 3; $i++) {
     for ($j = 1; $j <= $i; $j++) {
-        echo "* ";
+        echo "*";
     }
     echo "<br>";
 }
+
 echo "<br>";
 
-echo "<b>Pattern 2</b><br>";
-for ($i = 1; $i <= 4; $i++) {
+$count = 1;
+for ($i = 3; $i >= 1; $i--) {
     for ($j = 1; $j <= $i; $j++) {
-        echo $j . " ";
+        echo $count . " ";
+        $count++;
     }
     echo "<br>";
 }
+
 echo "<br>";
 
-echo "<b>Pattern 3</b><br>";
-$char = 'A';
-for ($i = 1; $i <= 4; $i++) {
+
+$ch = 'A';
+for ($i = 1; $i <= 3; $i++) {
     for ($j = 1; $j <= $i; $j++) {
-        echo $char . " ";
+        echo $ch . " ";
+        $ch++;
     }
-    $char++;
     echo "<br>";
 }
+?>
