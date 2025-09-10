@@ -1,0 +1,96 @@
+
+
+/* Uses your home.css header/footer & frame.
+   Only form-specific styles are here. */
+
+.reg-card{
+  width: 70%;
+  margin: 0 auto;
+  border: 2px solid #9a9a9a;
+  background: #fff;
+  padding: 18px 20px;
+}
+
+.reg-card .title{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #9a9a9a;
+}
+
+/* Grid rows: Label | : | Control */
+.reg-form .row{
+  display: grid;
+  grid-template-columns: 170px 18px 1fr;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.reg-form .row:last-child{ border-bottom: 0; }
+
+.reg-form label{ font-weight: 700; }
+.reg-form .colon{ text-align: center; color: #444; }
+
+.input{
+  width: 100%;
+  height: 28px;
+  border: 1px solid #bcbcbc;
+  background: #fff;
+  padding: 2px 6px;
+  outline: none;
+}
+.input:focus{ outline: 1px dotted #777; }
+
+/* Fieldsets */
+.fs{
+  margin: 12px 0;
+  border: 2px solid #bcbcbc;
+  padding: 8px 10px 12px;
+}
+.fs legend{
+  font-weight: 700;
+  padding: 0 6px;
+}
+.inline{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.input-sm{
+  width: 72px;
+  height: 28px;
+  border: 1px solid #bcbcbc;
+  padding: 2px 6px;
+}
+.hint{
+  margin-left: 10px;
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+}
+
+/* Buttons */
+.btnbar{
+  margin-top: 8px;
+  display: flex;
+  gap: 10px;
+}
+.btnbar button{
+  border: 1px solid #777;
+  background: #e6e6e6;
+  padding: 6px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btnbar button:hover{ filter: brightness(.97); }
+
+/* Keep box centered and with the same vibe on small screens */
+@media (max-width: 640px){
+  .reg-card{ width: 92%; }
+  .reg-form .row{ grid-template-columns: 140px 16px 1fr; }
+}
+
+
