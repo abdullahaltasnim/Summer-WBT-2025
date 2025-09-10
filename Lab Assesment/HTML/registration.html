@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>xCompany – Registration</title>
+  <link rel="stylesheet" href="home.css"><!-- your shared theme -->
+  <link rel="stylesheet" href="registration.css"><!-- page-specific styles -->
+</head>
+<body>
+  <main class="frame">
+    <!-- Header (same as home) -->
+    <header class="topbar">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 64 32" aria-hidden="true">
+          <path d="M4 28 L18 4 h8 L16 28 z" fill="#2bb34a"/>
+          <path d="M36 4 L52 28 h-8 L28 4 z" fill="#2bb34a"/>
+        </svg>
+        <span class="brand-text"><span class="x">X</span>Company</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a><span class="sep">|</span>
+        <a href="login.html">Login</a><span class="sep">|</span>
+        <a href="registration.html">Registration</a>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="content">
+      <div class="reg-card">
+        <h2 class="title">REGISTRATION</h2>
+
+        <form class="reg-form" action="#" method="post" novalidate>
+          <!-- Name -->
+          <div class="row">
+            <label for="name">Name</label>
+            <div class="colon">:</div>
+            <input class="input" id="name" name="name" type="text">
+          </div>
+          <!-- Email -->
+          <div class="row">
+            <label for="email">Email</label>
+            <div class="colon">:</div>
+            <input class="input" id="email" name="email" type="email">
+          </div>
+          <!-- User Name -->
+          <div class="row">
+            <label for="uname">User Name</label>
+            <div class="colon">:</div>
+            <input class="input" id="uname" name="username" type="text">
+          </div>
+          <!-- Password -->
+          <div class="row">
+            <label for="pass">Password</label>
+            <div class="colon">:</div>
+            <input class="input" id="pass" name="password" type="password">
+          </div>
+          <!-- Confirm -->
+          <div class="row">
+            <label for="cpass">Confirm Password</label>
+            <div class="colon">:</div>
+            <input class="input" id="cpass" name="confirmpass" type="password">
+          </div>
+
+          <!-- Gender -->
+          <fieldset class="fs">
+            <legend>Gender</legend>
+            <div class="inline">
+              <label><input type="radio" name="gender" value="male"> Male</label>
+              <label><input type="radio" name="gender" value="female"> Female</label>
+              <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          </fieldset>
+
+          <!-- DOB -->
+          <fieldset class="fs">
+            <legend>Date of Birth</legend>
+            <div class="inline">
+              <input class="input-sm" type="text" name="dd" placeholder="">
+              <input class="input-sm" type="text" name="mm" placeholder="">
+              <input class="input-sm" type="text" name="yyyy" placeholder="">
+              <span class="hint">(dd/mm/yyyy)</span>
+            </div>
+          </fieldset>
+
+          <!-- Buttons -->
+          <div class="btnbar">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer (same as home) -->
+    <footer class="footer">
+      Copyright &copy; 2017
+    </footer>
+  </main>
+</body>
+</html>
+
